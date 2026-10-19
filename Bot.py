@@ -90,4 +90,4 @@ def show_my_complaints(message):
 @bot.message_handler(func=lambda message: message.text == "🔙 Назад")
 def back_to_main(message):
     bot.reply_to(message, "Главное меню:", reply_markup=main_menu())
-bot.polling(none_stop=True).
+bot.polling(none_stop=True)
